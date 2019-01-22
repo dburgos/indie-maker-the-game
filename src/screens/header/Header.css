@@ -1,0 +1,11 @@
+.Header {
+  color: white;
+  left: 0;
+  position:fixed;
+  top: 0;
+
+}
+.Header h1 {
+  display: inline-block;
+  width: 32%;
+}

@@ -1,4 +1,5 @@
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+# Indie Maker, the game
+Open source idle game by [David Burgos](https://davidburgos.blog) written with React. WORK IN PROGRESS.
 
 ## Available Scripts
 
