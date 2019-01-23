@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import { Link } from 'react-router-dom'
-import Emoji from '../../components/emoji'
+import Emoji from '../../components/Emoji'
 import './Start.css';
 
 class Start extends Component {

@@ -20,3 +20,14 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
     monospace;
 }
+
+.button {
+  border-radius: 5px;
+  font-size: 30px;
+  padding: 20px;
+  text-decoration: none;
+}
+.green.button {
+  background: #00b77a;
+  color: white;
+}
