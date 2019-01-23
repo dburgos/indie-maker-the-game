@@ -1,8 +1,12 @@
 import React from 'react'
+import Header from '../header/Header'
+import Footer from '../footer/Footer'
 
 const Achievements = () => (
   <div>
-    <h1>Welcome to the Tornadoes Website!</h1>
+    <Header />
+    <h1>Achievements</h1>
+    <Footer />
   </div>
 )
 

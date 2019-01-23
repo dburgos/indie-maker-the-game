@@ -3,9 +3,11 @@
   left: 0;
   position:fixed;
   top: 0;
-
+  width: 100%;
 }
 .Header h1 {
   display: inline-block;
-  width: 32%;
+  width: 31%;
+  margin: 1% 1%;
+  text-align: center;
 }
