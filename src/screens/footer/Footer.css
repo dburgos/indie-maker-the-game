@@ -4,10 +4,29 @@ footer {
   bottom: 0;
   width: 100%;
   text-align: center;
+  background: black;
+}
+
+footer ul {
+  padding: 0;
 }
 
 footer ul li {
   list-style: none;
   display: inline-block;
+  width: 30%;
+}
+
+footer a {
   margin: 20px;
+  color: #ddd;
+  color: rgba(255,255,255,0.7);
+  text-decoration: none;
+  user-select: none;
+  text-align: center;
+  width: 70%;
+  display: inline-block;
+}
+footer a:hover {
+  color: white;
 }

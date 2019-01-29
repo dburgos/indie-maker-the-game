@@ -4,7 +4,7 @@ import { build } from '../actions'
 
 const BuildBtn = ({ dispatch }) => {
   return (
-    <button className="green button"
+    <button id="build-btn" className="green button"
       onClick={e => {
         e.preventDefault();
         dispatch(build())

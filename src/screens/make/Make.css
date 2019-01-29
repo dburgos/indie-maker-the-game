@@ -1,0 +1,28 @@
+.make-tip {
+  width: 90%;
+  margin: 0 auto;
+  position: fixed;
+  top: 16%;
+  left: 5%;
+}
+#marketing-btn, #build-btn {
+  width: 42vw;
+  height: 42vw;
+  max-width: 220px;
+  max-height: 220px;
+  border-radius: 50%;
+  border: 0;
+  user-select: none;
+}
+
+#build-btn {
+  position:fixed;
+  left: 5%;
+  bottom: 25%;
+}
+
+#marketing-btn {
+  position:fixed;
+  right: 5%;
+  bottom:25%;
+}
