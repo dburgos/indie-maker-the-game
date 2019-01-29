@@ -9,6 +9,7 @@ footer {
 
 footer ul {
   padding: 0;
+  margin: 0;
 }
 
 footer ul li {
@@ -18,7 +19,7 @@ footer ul li {
 }
 
 footer a {
-  margin: 20px;
+  padding: 20px;
   color: #ddd;
   color: rgba(255,255,255,0.7);
   text-decoration: none;
@@ -27,6 +28,10 @@ footer a {
   width: 70%;
   display: inline-block;
 }
-footer a:hover {
+footer a:hover, footer a.active {
   color: white;
+}
+footer a.active {
+  border-top: 3px solid green;
+  background: #111;
 }

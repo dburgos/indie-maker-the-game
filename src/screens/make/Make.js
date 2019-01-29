@@ -4,7 +4,6 @@ import Footer from '../footer/Footer'
 import MakeTip from '../../components/MakeTip'
 import BuildBtn from '../../components/BuildBtn'
 import MarketingBtn from '../../components/MarketingBtn'
-
 import './Make.css';
 
 class Make extends Component {
