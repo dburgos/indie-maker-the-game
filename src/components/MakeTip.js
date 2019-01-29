@@ -2,7 +2,11 @@ import React from 'react';
 import { connect } from 'react-redux'
 import Emoji from './Emoji'
 
-const MarketTip = ({ dispatch }) => {
+const mapStateToProps = state => {
+  return state.make;
+};
+
+const MarketTip = (state) => {
   return (
     <div className='make-tip'>
       <h1>Build something and spread the word!</h1>
@@ -10,4 +14,4 @@ const MarketTip = ({ dispatch }) => {
     </div>
   )
 };
-export default connect()(MarketTip);
+export default connect(mapStateToProps)(MarketTip);

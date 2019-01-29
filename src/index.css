@@ -27,6 +27,12 @@ code {
   padding: 20px;
   text-decoration: none;
 }
+.button:hover {
+  cursor:pointer
+}
+.button:focus {
+  outline:0;
+}
 .green.button {
   background: #00b77a;
   color: white;

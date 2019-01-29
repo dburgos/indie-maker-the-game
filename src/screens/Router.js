@@ -4,9 +4,11 @@ import Start from './start/Start'
 import Make from './make/Make'
 import Upgrades from './upgrades/Upgrades'
 import Achievements from './achievements/Achievements'
+import GameTimer from '../components/GameTimer'
 
 const Router = () => (
   <main>
+    <GameTimer />
     <Switch>
       <Route exact path='/' component={Start}/>
       <Route exact path='/make' component={Make}/>

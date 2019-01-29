@@ -9,3 +9,9 @@ export const marketing = function() {
     type: 'MARKETING'
   }
 }
+
+export const update = function() {
+  return {
+    type: 'UPDATE'
+  }
+}
