@@ -9,7 +9,7 @@ class Start extends Component {
       <div className="Start">
         <h1><Emoji symbol="👨‍💻"/></h1>
         <h1>Indie Maker</h1>
-        <h2>The Game</h2>
+        <h5>The Game</h5>
         <Link to='/make' className="PlayBtn">Play</Link>
       </div>
     );
