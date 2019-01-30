@@ -4,7 +4,7 @@
   position:fixed;
   top: 0;
   width: 100%;
-  background-image: #282C35;
+  background: #282C35;
   z-index:4;
 }
 .Header h1 {
