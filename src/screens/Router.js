@@ -9,11 +9,11 @@ import GameTimer from '../components/GameTimer'
 const Router = () => (
   <main>
     <GameTimer />
-    <Switch>
-      <Route exact path='/' component={Start}/>
-      <Route exact path='/make' component={Make}/>
-      <Route exact path='/upgrades' component={Upgrades}/>
-      <Route exact path='/achievements' component={Achievements}/>
+    <Switch basename={'/indie-maker-the-game'}>
+      <Route exact path={`${process.env.PUBLIC_URL}/`} component={Start}/>
+      <Route exact path={`${process.env.PUBLIC_URL}/make`} component={Make}/>
+      <Route exact path={`${process.env.PUBLIC_URL}/upgrades`} component={Upgrades}/>
+      <Route exact path={`${process.env.PUBLIC_URL}/achievements`} component={Achievements}/>
     </Switch>
   </main>
 )
