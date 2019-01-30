@@ -1,13 +1,13 @@
 {
-  "main.css": "/static/css/main.739ee522.chunk.css",
-  "main.js": "/static/js/main.49718249.chunk.js",
-  "main.js.map": "/static/js/main.49718249.chunk.js.map",
-  "static/js/1.4e93fcae.chunk.js": "/static/js/1.4e93fcae.chunk.js",
-  "static/js/1.4e93fcae.chunk.js.map": "/static/js/1.4e93fcae.chunk.js.map",
-  "runtime~main.js": "/static/js/runtime~main.229c360f.js",
-  "runtime~main.js.map": "/static/js/runtime~main.229c360f.js.map",
-  "static/css/main.739ee522.chunk.css.map": "/static/css/main.739ee522.chunk.css.map",
-  "index.html": "/index.html",
-  "precache-manifest.2975b7f18707bcb54e0886fcdc71e161.js": "/precache-manifest.2975b7f18707bcb54e0886fcdc71e161.js",
-  "service-worker.js": "/service-worker.js"
+  "main.css": "/indie-maker-the-game/static/css/main.739ee522.chunk.css",
+  "main.js": "/indie-maker-the-game/static/js/main.85ff99a6.chunk.js",
+  "main.js.map": "/indie-maker-the-game/static/js/main.85ff99a6.chunk.js.map",
+  "static/js/1.64eddeaa.chunk.js": "/indie-maker-the-game/static/js/1.64eddeaa.chunk.js",
+  "static/js/1.64eddeaa.chunk.js.map": "/indie-maker-the-game/static/js/1.64eddeaa.chunk.js.map",
+  "runtime~main.js": "/indie-maker-the-game/static/js/runtime~main.3ba4d759.js",
+  "runtime~main.js.map": "/indie-maker-the-game/static/js/runtime~main.3ba4d759.js.map",
+  "static/css/main.739ee522.chunk.css.map": "/indie-maker-the-game/static/css/main.739ee522.chunk.css.map",
+  "index.html": "/indie-maker-the-game/index.html",
+  "precache-manifest.10cf025e55bf7073813e6b73579e639b.js": "/indie-maker-the-game/precache-manifest.10cf025e55bf7073813e6b73579e639b.js",
+  "service-worker.js": "/indie-maker-the-game/service-worker.js"
 }
