@@ -1,0 +1,28 @@
+ul.achievements {
+  display: block;
+  padding: 0;
+  width: 98vw;
+  margin: 25vw 0;
+}
+.achievements li {
+  background: #222;
+  border-radius:10px;
+  list-style: none;
+  margin: 2vw;
+  padding: 5vw;
+  display: inline-block;
+  width: 35vw;
+}
+.achievements h3, .achievements p {
+  margin: 0;
+}
+.achievements li.locked {
+  opacity: 0.4;
+}
+
+.achievements h1 {
+  margin: 0;
+}
+.achievements .emoji {
+  font-size: 60px;
+}

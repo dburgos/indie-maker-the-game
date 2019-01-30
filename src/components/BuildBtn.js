@@ -1,6 +1,7 @@
 import React from 'react';
 import { connect } from 'react-redux'
 import { build } from '../actions'
+import Emoji from './Emoji'
 
 const BuildBtn = ({ dispatch }) => {
   return (
@@ -9,7 +10,7 @@ const BuildBtn = ({ dispatch }) => {
         e.preventDefault();
         dispatch(build())
       }}
-    >Build</button>
+    ><Emoji symbol="🚀" /><br/>Build</button>
   )
 };
 export default connect()(BuildBtn);

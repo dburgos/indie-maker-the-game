@@ -17,11 +17,9 @@ const Upgrades = (state) => (
       {state.upgrades.map(el => (
         el.acquired ? null :
           <li className="list-group-item" key={el.id}>
-            <div style={{ display: 'inline-block', width: '70%'}}>
+            <div style={{ display: 'inline-block', width: '100%'}}>
               <h3><Emoji symbol={el.icon} /> {el.title}</h3>
               <p>{el.description}</p>
-            </div>
-            <div style={{ display: 'inline-block', width: '30%'}}>
               <button className="green button" disabled={state.make.money < el.cost} onClick={e => {
                 e.preventDefault();
                 state.dispatch(buy(el.id));

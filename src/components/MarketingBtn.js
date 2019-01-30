@@ -1,6 +1,7 @@
 import React from 'react';
 import { connect } from 'react-redux'
 import { marketing } from '../actions'
+import Emoji from './Emoji'
 
 const MarketingBtn = ({ dispatch }) => {
   return (
@@ -9,7 +10,7 @@ const MarketingBtn = ({ dispatch }) => {
         e.preventDefault();
         dispatch(marketing())
       }}
-    >Marketing</button>
+    ><Emoji symbol="🎲" /><br/>Marketing</button>
   )
 };
 export default connect()(MarketingBtn);

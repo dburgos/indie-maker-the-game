@@ -2,7 +2,7 @@ const defaultState = {
   builds: 0,
   marketing: 0,
   followers: 0,
-  money: 0,
+  money: 100,
   level: 0,
   conversion: 1,
   productivity: 10,
@@ -25,7 +25,7 @@ const make = (state = defaultState, action) => {
       return Object.assign({}, state, {
         money: state.money + parseInt(state.followers*state.conversion/100, 10),
         followers: state.followers + parseInt(marketingFactor+buildFactor, 10)+state.level,
-        level: state.followers.length > 2 ? state.followers.length-2 : 0
+        level: state.followers.toString().length > 2 ? state.followers.toString().length-2 : 0
       });
     case 'UPGRADE':
       const upgrade = action.payload;

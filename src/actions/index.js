@@ -29,3 +29,10 @@ export const upgrade = function(payload) {
     payload
   }
 }
+
+export const achievements = function(payload) {
+  return {
+    type: 'UNLOCK',
+    stats: payload
+  }
+}

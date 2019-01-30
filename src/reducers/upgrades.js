@@ -36,11 +36,11 @@ const defaultState = [
     id: 4,
     icon: '🔮',
     title: 'Ads Campaign #1',
-    description: 'Followers +583',
+    description: 'Followers +357',
     cost: 3000,
     acquired: false,
     update: {
-      followers: 583
+      followers: 357
     }
   },
   {
@@ -164,7 +164,7 @@ const defaultState = [
       followers: 500000
     }
   }
-]
+];
 const upgrades = (state = defaultState, action) => {
   switch (action.type) {
     case 'BUY':
