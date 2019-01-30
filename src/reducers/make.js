@@ -7,6 +7,7 @@ const defaultState = {
   conversion: 1,
   productivity: 10,
   upgrades: 0,
+  playTime: 0,
   startPlay: new Date()
 }
 const make = (state = defaultState, action) => {
@@ -29,7 +30,8 @@ const make = (state = defaultState, action) => {
       return Object.assign({}, state, {
         money: state.money + parseInt(state.followers*state.conversion/1000, 10),
         followers: state.marketing === 0 ? 0 : state.followers + parseInt(marketingFactor+buildFactor, 10)+state.level,
-        level: state.followers.toString().length > 2 ? state.followers.toString().length-2 : 0
+        level: state.followers.toString().length > 2 ? state.followers.toString().length-2 : 0,
+        playTime: (new Date().getTime()-state.startPlay.getTime())/1000
       });
     case 'UPGRADE':
       const upgrade = action.payload;

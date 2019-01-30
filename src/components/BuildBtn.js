@@ -19,7 +19,7 @@ class BuildBtn extends React.Component {
     this.setState({ animated: true });
     setTimeout(function(e) {
       _self.setState({ animated: false });
-    }, 500);
+    }, 200);
   }
 
   render(state) {

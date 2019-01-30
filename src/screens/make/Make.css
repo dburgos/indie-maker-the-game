@@ -15,11 +15,11 @@
   user-select: none;
 }
 .animated {
-  -webkit-transition: all .5s ease;
-  -moz-transition: all .5s ease;
-  -o-transition: all .5s ease;
-  -ms-transition: all .5s ease;
-  transition: all .5s ease;
+  -webkit-transition: all .2s ease;
+  -moz-transition: all .2s ease;
+  -o-transition: all .2s ease;
+  -ms-transition: all .2s ease;
+  transition: all .2s ease;
   -moz-transform: scale(2);
   -ms-transform: scale(2);
   -o-transform: scale(2);
