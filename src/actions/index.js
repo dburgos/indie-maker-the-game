@@ -15,3 +15,17 @@ export const update = function() {
     type: 'UPDATE'
   }
 }
+
+export const buy = function(id) {
+  return {
+    type: 'BUY',
+    id: id
+  }
+}
+
+export const upgrade = function(payload) {
+  return {
+    type: 'UPGRADE',
+    payload
+  }
+}

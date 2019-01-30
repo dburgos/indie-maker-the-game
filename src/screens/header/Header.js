@@ -9,9 +9,9 @@ const mapStateToProps = state => {
 
 const Header = (state) => (
   <header className="Header">
-    <h1><Emoji symbol="💵" label="money"/> ${state.money}</h1>
-    <h1><Emoji symbol="🗣" label="followers"/> {state.followers}</h1>
-    { state.level > 0 ? <h1><Emoji symbol="🏅" label="level"/> {state.level}</h1> : null}
+    <h1><Emoji symbol="💵" label="money"/><br/>${state.money}</h1>
+    <h1><Emoji symbol="🗣" label="followers"/><br/>{state.followers}</h1>
+    { state.level > 0 ? <h1><Emoji symbol="🏅" label="level"/><br/>{state.level}</h1> : null}
   </header>
 )
 

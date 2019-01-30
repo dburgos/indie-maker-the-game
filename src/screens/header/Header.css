@@ -4,6 +4,8 @@
   position:fixed;
   top: 0;
   width: 100%;
+  background-image: linear-gradient(#282C35 80%, transparent 100%);
+  z-index:4;
 }
 .Header h1 {
   display: inline-block;

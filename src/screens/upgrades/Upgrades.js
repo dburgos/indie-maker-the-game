@@ -1,13 +1,40 @@
 import React from 'react'
+import { connect } from 'react-redux'
+import { buy, upgrade } from '../../actions'
+import Emoji from '../../components/Emoji'
 import Header from '../header/Header'
 import Footer from '../footer/Footer'
+import './Upgrades.css';
 
-const Upgrades = () => (
+const mapStateToProps = state => {
+  return state;
+};
+
+const Upgrades = (state) => (
   <div>
     <Header />
-    <h1>Upgrades</h1>
+    <ul className="upgrades list-group list-group-flush">
+      {state.upgrades.map(el => (
+        el.acquired ? null :
+          <li className="list-group-item" key={el.id}>
+            <div style={{ display: 'inline-block', width: '70%'}}>
+              <h3><Emoji symbol={el.icon} /> {el.title}</h3>
+              <p>{el.description}</p>
+            </div>
+            <div style={{ display: 'inline-block', width: '30%'}}>
+              <button className="green button" disabled={state.make.money < el.cost} onClick={e => {
+                e.preventDefault();
+                state.dispatch(buy(el.id));
+                const upgradeData = el.update;
+                upgradeData.cost = el.cost;
+                state.dispatch(upgrade(upgradeData));
+              }}>Buy for ${el.cost}</button>
+            </div>
+          </li>
+      ))}
+    </ul>
     <Footer />
   </div>
 )
 
-export default Upgrades
+export default connect(mapStateToProps)(Upgrades)
