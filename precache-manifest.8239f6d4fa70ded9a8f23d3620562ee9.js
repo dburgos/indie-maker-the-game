@@ -4,19 +4,19 @@ self.__precacheManifest = [
     "url": "/indie-maker-the-game/static/js/runtime~main.3ba4d759.js"
   },
   {
-    "revision": "48da3e618c1ae0699529",
-    "url": "/indie-maker-the-game/static/js/main.48da3e61.chunk.js"
+    "revision": "43bad448bd8b0e1ee3fa",
+    "url": "/indie-maker-the-game/static/js/main.43bad448.chunk.js"
   },
   {
     "revision": "64eddeaaee108def94b6",
     "url": "/indie-maker-the-game/static/js/1.64eddeaa.chunk.js"
   },
   {
-    "revision": "48da3e618c1ae0699529",
-    "url": "/indie-maker-the-game/static/css/main.739ee522.chunk.css"
+    "revision": "43bad448bd8b0e1ee3fa",
+    "url": "/indie-maker-the-game/static/css/main.d8d96a6a.chunk.css"
   },
   {
-    "revision": "afff120a829d0fe3f22f56e5bfc8cf22",
+    "revision": "e0e0ad0ef04d52b4ee300a92ee0fd935",
     "url": "/indie-maker-the-game/index.html"
   }
 ];
