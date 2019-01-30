@@ -10,9 +10,9 @@ const mapStateToProps = state => {
 
 const Header = (state) => (
   <header className="Header">
-    <h1><Emoji symbol="💵" label="money"/><br/>${formatNumber(state.money)}</h1>
-    <h1><Emoji symbol="🗣" label="followers"/><br/>{formatNumber(state.followers)}</h1>
-    { state.level > 0 ? <h1><Emoji symbol="🏅" label="level"/><br/>{state.level}</h1> : null}
+    <h2 style={{width:'35%'}}><Emoji symbol="💵" label="money"/><br/>${formatNumber(state.money)}</h2>
+    <h2 style={{width:'35%'}}><Emoji symbol="🗣" label="followers"/><br/>{formatNumber(state.followers)}</h2>
+    { state.level >= 0 ? <h2 style={{width:'24%'}}><Emoji symbol="🏅" label="level"/><br/>{state.level}</h2> : null}
   </header>
 )
 

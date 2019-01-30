@@ -13,6 +13,7 @@
   border-radius: 50%;
   border: 0;
   user-select: none;
+  font-size: 25px;
 }
 .animated {
   -webkit-transition: all .2s ease;

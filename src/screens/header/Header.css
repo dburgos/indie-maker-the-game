@@ -7,9 +7,8 @@
   background: #282C35;
   z-index:4;
 }
-.Header h1 {
+.Header h2 {
   display: inline-block;
-  width: 31%;
   margin: 5% 1%;
   text-align: center;
 }

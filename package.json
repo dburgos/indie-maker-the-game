@@ -1,6 +1,6 @@
 {
   "name": "maker-game",
-  "version": "1.0.3",
+  "version": "1.0.5",
   "private": true,
   "dependencies": {
     "gh-pages": "^2.0.1",
