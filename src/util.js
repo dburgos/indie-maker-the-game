@@ -15,7 +15,7 @@ const formatNumber = (num) => {
      break;
    }
  }
- return (num / si[i].value).toFixed(0).replace(rx, "$1") + si[i].symbol;
+ return (num / si[i].value).toFixed(2).replace(rx, "$1") + si[i].symbol;
 }
 
 export default formatNumber;

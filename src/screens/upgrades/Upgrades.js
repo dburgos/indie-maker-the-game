@@ -19,14 +19,14 @@ const Upgrades = (state) => (
           <li className="list-group-item" key={el.id}>
             <div style={{ display: 'inline-block', width: '100%'}}>
               <h3><Emoji symbol={el.icon} /> {el.title}</h3>
-              <p>{el.description}</p>
+              <p>{el.description}
               <button className="green button" disabled={state.make.money < el.cost} onClick={e => {
                 e.preventDefault();
                 state.dispatch(buy(el.id));
                 const upgradeData = el.update;
                 upgradeData.cost = el.cost;
                 state.dispatch(upgrade(upgradeData));
-              }}>Buy for ${el.cost}</button>
+              }}>Buy for ${el.cost}</button></p>
             </div>
           </li>
       ))}

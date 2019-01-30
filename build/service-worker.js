@@ -14,7 +14,7 @@
 importScripts("https://storage.googleapis.com/workbox-cdn/releases/3.6.3/workbox-sw.js");
 
 importScripts(
-  "/indie-maker-the-game/precache-manifest.7fafae04bb93fd57837e5bb4dea3c84e.js"
+  "/indie-maker-the-game/precache-manifest.86f5000fd38bcad9080ff246fbfd50de.js"
 );
 
 workbox.clientsClaim();

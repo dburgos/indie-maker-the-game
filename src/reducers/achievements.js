@@ -12,7 +12,7 @@ const defaultState = [
     key: 2,
     icon: '😂',
     title: 'Look Zuck!',
-    description: 'Grow your audience to 10M people',
+    description: 'Grow your audience to 10M',
     field: 'followers',
     minValue: 10000000,
     unlocked: false

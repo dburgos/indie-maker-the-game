@@ -16,6 +16,8 @@ ul.upgrades {
 }
 .upgrades button {
   float: right;
+  font-size: 20px;
+  padding: 10px;
 }
 button[disabled] {
   opacity: 0.3;
