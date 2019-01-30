@@ -3,14 +3,31 @@ import { connect } from 'react-redux'
 import { build } from '../actions'
 import Emoji from './Emoji'
 
-const BuildBtn = ({ dispatch }) => {
-  return (
-    <button id="build-btn" className="green button"
-      onClick={e => {
-        e.preventDefault();
-        dispatch(build())
-      }}
-    ><Emoji symbol="🚀" /><br/>Build</button>
-  )
-};
+class BuildBtn extends React.Component {
+
+  constructor(props) {
+    super(props);
+    this.state = {
+      animated: false
+    }
+  }
+
+  onClick(e) {
+    const _self = this;
+    e.preventDefault();
+    this.props.dispatch(build());
+    this.setState({ animated: true });
+    setTimeout(function(e) {
+      _self.setState({ animated: false });
+    }, 500);
+  }
+
+  render(state) {
+    return (
+      <button id="build-btn" className={'green button '+(this.state.animated?'animated':'')}
+        onClick={this.onClick.bind(this)}
+      ><h1><Emoji symbol="🚀" /></h1>Build</button>
+    )
+  }
+}
 export default connect()(BuildBtn);

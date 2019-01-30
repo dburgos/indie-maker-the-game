@@ -20,11 +20,15 @@ const make = (state = defaultState, action) => {
         marketing: state.marketing+1
       });
     case 'UPDATE':
-      const marketingFactor = state.marketing*state.productivity/100;
-      const buildFactor = state.builds*state.productivity/100;
+      const random = Math.random() * 100;
+      if (random < 90) {
+        return state;
+      }
+      const marketingFactor = state.marketing*state.productivity/300;
+      const buildFactor = state.builds*state.productivity/1000;
       return Object.assign({}, state, {
-        money: state.money + parseInt(state.followers*state.conversion/100, 10),
-        followers: state.followers + parseInt(marketingFactor+buildFactor, 10)+state.level,
+        money: state.money + parseInt(state.followers*state.conversion/1000, 10),
+        followers: state.marketing === 0 ? 0 : state.followers + parseInt(marketingFactor+buildFactor, 10)+state.level,
         level: state.followers.toString().length > 2 ? state.followers.toString().length-2 : 0
       });
     case 'UPGRADE':

@@ -14,6 +14,23 @@
   border: 0;
   user-select: none;
 }
+.animated {
+  -webkit-transition: all .5s ease;
+  -moz-transition: all .5s ease;
+  -o-transition: all .5s ease;
+  -ms-transition: all .5s ease;
+  transition: all .5s ease;
+  -moz-transform: scale(2);
+  -ms-transform: scale(2);
+  -o-transform: scale(2);
+  -webkit-transform: scale(2);
+  transform: scale(2);
+  opacity: 0;
+}
+
+#marketing-btn h1, #build-btn h1 {
+  margin: 0;
+}
 
 #build-btn {
   position:fixed;
