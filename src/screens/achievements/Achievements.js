@@ -15,7 +15,7 @@ const Achievements = (state) => (
       <ul className="achievements list-group list-group-flush">
         {state.achievements.map(el => (
           el.acquired ? null :
-            <li className={el.unlocked?'':'locked'} key={el.id}>
+            <li className={el.unlocked?'':'locked'} key={el.key}>
               <h1><Emoji symbol={el.icon} label="Achievement" /></h1><h3>{el.title}</h3>
               <p>{el.description}</p>
             </li>
