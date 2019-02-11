@@ -1,6 +1,6 @@
 import React from 'react';
 import { connect } from 'react-redux'
-import { update, achievements } from '../actions'
+import { update, achievements } from '../redux/actions'
 
 const mapStateToProps = state => {
   return state.make;
@@ -33,7 +33,7 @@ class GameTimer extends React.Component {
   }
 
   render(state) {
-    return ( null )
+    return (null)
   }
 };
 
